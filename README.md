@@ -25,7 +25,7 @@ where:
   * you can set `PEM_PATH`, default is `/root/.chef/${CHEF_USER}.pem`
   * you can set `CHEF_SERVER_URL`, default is https://chef.example.com/organizations/testorg ,
     for Chef Server 11 the part "organizations/testorg" is not needed
-  * you can set `KNIFE_COMMAND`, default is `knife backup export cookbooks roles environments clients users nodes -D /var/backups/chef-server`,
+  * you can set `KNIFE_COMMAND`, default is `knife backup export cookbooks roles environments clients users nodes -D /var/backups/chef-server`. A good example for testing maybe `KNIFE_COMMAND="knife backup export environments -D /var/backups/chef-server"`.
     so actually, you can change this command to `knife backup restore cookbooks roles environments clients users nodes -D /path/to/exported_backup -y`
     and use this image to restore Chef Server backup
 
